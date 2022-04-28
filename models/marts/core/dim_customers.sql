@@ -9,8 +9,8 @@ customer_orders as (
 final as (
 
     select
-        customers.customer_id,
-        customers.first_name,
+        customers.customer_id as custom_id,
+        customers.first_name as primer_nombre,
         customers.last_name,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
